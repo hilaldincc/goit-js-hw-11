@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vite App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SimpleLightbox CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.1/simple-lightbox.min.css"
+    />
+
+    <!-- iziToast CSS (opsiyonel ama uyarılar için kullanacağız) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css"
+    />
+
+    <!-- Kendi stil dosyan -->
+    <script type="module" crossorigin src="/goit-js-hw-11/assets/vendor-67BWzQEt.js"></script>
+    <script type="module" crossorigin src="/goit-js-hw-11/assets/main-TFlLsd75.js"></script>
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/vendor-CWKLx11g.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/styles-Cnxj2tI-.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Arama formu -->
+      <form class="search-form" id="search-form">
+        <input
+          type="text"
+          name="searchQuery"
+          autocomplete="off"
+          placeholder="Search images..."
+        />
+        <button type="submit">Search</button>
+      </form>
+
+      <!-- Yükleme göstergesi -->
+      <div class="loader hidden">Loading images, please wait...</div>
+
+      <!-- Galeri bölgesi -->
+      <div class="gallery"></div>
+    </div>
+
+    <!-- Vite ile bağladığım JS -->
+  </body>
+</html>
