@@ -2,27 +2,48 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Vite App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page 2</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <load
-      src="./partials/header.html"
-      icon-path="./img/sprite.svg#logo"
-      highlight-act="active"
+
+    <!-- SimpleLightbox CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.1/simple-lightbox.min.css"
     />
 
-    <main>
-      <div class="container">
-        <h1 class="main-title">
-          <span class="main-title-gradient">Welcome</span> to page 2
-        </h1>
-        <load src="./partials/back-link.html" />
-      </div>
-    </main>
+    <!-- iziToast CSS (opsiyonel ama uyarılar için kullanacağız) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css"
+    />
 
-    <load src="./partials/footer.html" />
+    <!-- Kendi stil dosyan -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Arama formu -->
+      <form class="search-form" id="search-form">
+        <input
+          type="text"
+          name="searchQuery"
+          autocomplete="off"
+          placeholder="Search images..."
+        />
+        <button type="submit">Search</button>
+      </form>
+
+      <!-- Yükleme göstergesi -->
+      <div class="loader hidden">Loading images, please wait...</div>
+
+      <!-- Galeri bölgesi -->
+      <div class="gallery"></div>
+    </div>
+
+    <!-- Vite ile bağladığım JS -->
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/api.js"></script>
+    <script type="module" src="./js/markup.js"></script>
   </body>
 </html>
